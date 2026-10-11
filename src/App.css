@@ -1,0 +1,467 @@
+/* ========================================
+   MAKEOVER MAGIC - GLOBAL STYLES
+======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #373039;
+  background: #fffafc;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+/* ========================================
+   NAVIGATION BAR
+======================================== */
+
+.navbar {
+  width: 100%;
+  min-height: 85px;
+  padding: 18px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #f3e5ec;
+}
+
+.logo {
+  margin: 0;
+  color: #b7447d;
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+.navbar nav,
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.navbar nav a,
+.nav-links a {
+  color: #554b54;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.navbar nav a:hover,
+.nav-links a:hover {
+  color: #c04482;
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.book-btn,
+.primary-btn {
+  display: inline-block;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 30px;
+  background: #c04482;
+  color: #ffffff;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.book-btn {
+  white-space: nowrap;
+}
+
+.book-btn:hover,
+.primary-btn:hover {
+  background: #a8326b;
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   HOME PAGE
+======================================== */
+
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hero {
+  width: 100%;
+  min-height: 440px;
+  padding: 75px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background: linear-gradient(135deg, #fff1f6, #fffaf4);
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.eyebrow {
+  color: #b7447d;
+  letter-spacing: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hero-content h1 {
+  margin: 18px 0;
+  color: #352b35;
+  font-size: clamp(38px, 5vw, 65px);
+  line-height: 1.12;
+}
+
+.hero-content h1 span {
+  color: #c04482;
+}
+
+.hero-content p {
+  max-width: 500px;
+  color: #756b75;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.hero-visual {
+  flex: 1;
+  max-width: 420px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45% 45% 25px 25px;
+  background: linear-gradient(145deg, #f9d8e6, #f5e6d9);
+}
+
+.hero-visual span {
+  font-size: 100px;
+}
+
+/* ========================================
+   GENERAL SECTION STYLES
+======================================== */
+
+section {
+  width: 100%;
+}
+
+.services-section,
+.artists-section,
+.about-section,
+.contact-section {
+  padding: 65px 7%;
+}
+
+.services-section h2,
+.artists-section h2,
+.about-section h2,
+.contact-section h2 {
+  color: #b83272;
+}
+
+.services-section > h2,
+.artists-section > h2 {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 34px;
+}
+
+.section-description {
+  max-width: 700px;
+  margin: 0 auto 35px;
+  color: #756b75;
+  text-align: center;
+  line-height: 1.7;
+}
+
+/* ========================================
+   SERVICE CARDS
+======================================== */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+  text-align: left;
+}
+
+.service-card {
+  padding: 30px 25px;
+  background: #ffffff;
+  border: 1px solid #f1dfe8;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(130, 70, 100, 0.07);
+  transition: transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(130, 70, 100, 0.13);
+}
+
+.service-icon {
+  font-size: 38px;
+}
+
+.service-card h3 {
+  color: #b7447d;
+  font-size: 21px;
+}
+
+.service-card p {
+  color: #756b75;
+  line-height: 1.7;
+}
+
+.service-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #b7447d;
+  font-weight: bold;
+}
+
+/* ========================================
+   ARTIST CARDS
+======================================== */
+
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.artist-card {
+  padding: 25px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #f1dfe8;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(130, 70, 100, 0.07);
+}
+
+.artist-card img {
+  width: 100%;
+  max-width: 250px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.artist-card h3 {
+  color: #b7447d;
+}
+
+/* ========================================
+   ABOUT PAGE
+======================================== */
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #665b65;
+}
+
+.about-card {
+  padding: 30px;
+  margin-top: 25px;
+  background: #fff1f6;
+  border-radius: 18px;
+}
+
+.about-icon {
+  font-size: 35px;
+}
+
+/* ========================================
+   CONTACT PAGE
+======================================== */
+
+.contact-form {
+  width: 100%;
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #f1dfe8;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(130, 70, 100, 0.07);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  color: #554b54;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #e7d5df;
+  border-radius: 10px;
+  background: #fffafc;
+  color: #373039;
+  font: inherit;
+}
+
+.form-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: 2px solid #e9a5c7;
+  border-color: #c04482;
+}
+
+/* ========================================
+   BOOKING PAGE
+======================================== */
+
+.booking-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 55px 7%;
+}
+
+.booking-form {
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #f1dfe8;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(130, 70, 100, 0.07);
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+  padding: 30px 7%;
+  background: #3b303a;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer p {
+  margin: 8px 0;
+  line-height: 1.7;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links,
+  .navbar nav {
+    gap: 16px;
+  }
+
+  .hero {
+    padding: 55px 6%;
+    gap: 30px;
+  }
+
+  .service-grid,
+  .artist-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar nav,
+  .nav-links {
+    gap: 14px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 45px 6%;
+    text-align: center;
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-visual {
+    width: 100%;
+    min-height: 220px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .service-grid,
+  .artist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-section,
+  .artists-section,
+  .about-section,
+  .contact-section {
+    padding: 45px 6%;
+  }
+
+  .contact-form,
+  .booking-form {
+    padding: 20px;
+  }
+}
