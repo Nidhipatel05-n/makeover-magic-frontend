@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-
-const API_URL = "https://makeover-magic-backend-production.up.railway.app/api/bookings";
-
+const API_URL = "http://localhost:8080/api/bookings";
 function Booking() {
   const [bookings, setBookings] = useState([]);
   const [error, setError] = useState("");
